@@ -17,12 +17,13 @@ CRNN网络模型-CNN+RNN OCR
 2. 运行:python3 demo.py
 
 - 输入图片:
+
 ![Example Image](./data/demo.png)
 
 - 结果输出:
 ```
     loading pretrained model from ./data/crnn_lstm.pth
-    模型结果
+    ### 模型结果
     - raw_pred size: 21, sim_pred size: 9
     - decode result: a-----v-a-i-la--bllee => available
 ```
