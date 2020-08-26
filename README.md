@@ -5,9 +5,10 @@ CRNN网络模型-CNN+RNN OCR
 1. 支持横向和竖向文字OCR（中文和英文）
 2. 提供数据集创建工具和训练代码
 3. 提供预训练模型（LSTM版本和Linear版本）
+4. 基于Pytorch CTCLoss，不依赖warp_ctc_pytorch（简化依赖环境）
 
 此项目参考:
-- CRNN模型：https://github.com/bgshih/crnn
+- CRNN模型Pytorch版本：https://github.com/meijieru/crnn.pytorch
 - chineseocr: https://github.com/chineseocr/chineseocr
 
 模型使用
