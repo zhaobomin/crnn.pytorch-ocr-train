@@ -118,18 +118,18 @@ class CRNN(nn.Module):
             name = k.replace('module.','') # remove `module.`
             modelWeights[name] = v      
         self.load_state_dict(modelWeights)
-        if torch.cuda.is_available() and self.GPU:
+        if torch.cuda.is_available():
             self.cuda()
         self.eval()
         
     def load_weights(self,path):    
         self.load_state_dict(torch.load(path))  
-        if torch.cuda.is_available() and self.GPU:
+        if torch.cuda.is_available():
             self.cuda()
         self.eval()  
      
     def predict(self,image):
-        img_w = 100 #2 * image.size[0] // image.size[1] 
+        img_w = 32 * image.size[0] // image.size[1] #维持固定宽高比
         transformer = dataset.resizeNormalize((img_w, 32))  
         image = transformer(image)
         
