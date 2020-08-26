@@ -15,10 +15,10 @@ CRNN网络模型-CNN+RNN OCR
 1. 先下载预训练模型
 2. 运行:python3 demo.py
 
-输入图片:
+- 输入图片:
 ![Example Image](./data/demo.png)
 
-结果输出:
+- 结果输出:
     loading pretrained model from ./data/crnn.pth
     a-----v--a-i-l-a-bb-l-ee-- => available
 
