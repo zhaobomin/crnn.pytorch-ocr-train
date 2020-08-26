@@ -20,8 +20,12 @@ CRNN网络模型-CNN+RNN OCR
 ![Example Image](./data/demo.png)
 
 - 结果输出:
-    loading pretrained model from ./data/crnn.pth
-    a-----v--a-i-l-a-bb-l-ee-- => available
+```
+    loading pretrained model from ./data/crnn_lstm.pth
+    模型结果
+    - raw_pred size: 21, sim_pred size: 9
+    - decode result: a-----v-a-i-la--bllee => available
+```
 
 Train模型
 -----------------
