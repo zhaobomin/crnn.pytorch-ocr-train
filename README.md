@@ -15,6 +15,7 @@ CRNN网络模型-CNN+RNN OCR
 --------
 1. 先下载预训练模型,拷贝到weights/文件夹，百度网盘下载:https://pan.baidu.com/s/1nvRw665LwS6a9dxApvT_Xw  密码:uqqy
 2. 运行:python3 demo.py
+3. 详细模型测试和讲解：[demo.ipynb](./demo.ipynb)
 
 测试案例
 -------

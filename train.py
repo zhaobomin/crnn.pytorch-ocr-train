@@ -199,14 +199,10 @@ def trainBatch(net, criterion, optimizer):
     
     utils.loadData(text, t)
     utils.loadData(length, l)
-    
-    #print("text, length = ", text, length) , 标注结果
-    
+
     preds = crnn(image)
     preds_size = Variable(torch.IntTensor([preds.size(0)] * batch_size))
     
-    #print("preds:", preds.shape) #26 x N=5 x 37
-
     log_preds = torch.nn.functional.log_softmax(preds,dim=2)
     cost = criterion(log_preds, text, preds_size, length) / batch_size
     
