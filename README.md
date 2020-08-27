@@ -16,9 +16,11 @@ CRNN网络模型-CNN+RNN OCR
 1. 先下载预训练模型,拷贝到weights/文件夹，百度网盘下载:https://pan.baidu.com/s/1nvRw665LwS6a9dxApvT_Xw  密码:uqqy
 2. 运行:python3 demo.py
 
-- 输入图片:
+测试案例
+-------
+1. 横版文字测试
 
-![Example Image](./data/demo.png)
+![Example Image](./data/show1.png)
 
 - 结果输出:
 ```
@@ -27,6 +29,11 @@ CRNN网络模型-CNN+RNN OCR
     - raw_pred size: 21, sim_pred size: 9
     - decode result: a-----v-a-i-la--bllee => available
 ```
+
+2. 竖版文字测试【注：竖版文字需要单独训练，训练代码自适应竖版文字】
+![Example Image](./data/show2.png)
+
+
 
 Train模型
 -----------------
